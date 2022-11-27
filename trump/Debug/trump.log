@@ -1,7 +1,0 @@
-﻿  MyForm.cpp
-C:\Users\pc\Desktop\trump\trump\MyForm.cpp(8,33): warning C4829: main 함수에 대한 매개 변수가 잘못된 것 같습니다. 'int main(Platform::Array<Platform::String^>^ argv)'를 사용하십시오.
-  BlackJack.cpp
-  .NETFramework,Version=v4.7.1.AssemblyAttributes.cpp
-  코드를 생성하고 있습니다...
-  MyForm.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
-  trump.vcxproj -> C:\Users\pc\Desktop\trump\Debug\trump.exe
