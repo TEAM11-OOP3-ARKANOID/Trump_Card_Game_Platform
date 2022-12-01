@@ -1,0 +1,3 @@
+C:\Users\pc\Desktop\trump\trump\x64\Debug\trump.MyForm.resources
+C:\Users\pc\Desktop\trump\trump\x64\Debug\trump.vcxproj.GenerateResource.cache
+C:\Users\pc\Desktop\trump\trump\x64\Debug\trump.vcxproj.AssemblyReference.cache

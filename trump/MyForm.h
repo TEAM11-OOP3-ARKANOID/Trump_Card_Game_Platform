@@ -1,5 +1,5 @@
 #pragma once
-
+#include "OldMaid.h"
 namespace trump {
 
 	using namespace System;
@@ -42,9 +42,13 @@ namespace trump {
 	private: System::Void ButtonClick(System::Object^ sender, System::EventArgs^ e)
 	{
 		System::Windows::Forms::Button^ btn = (System::Windows::Forms::Button^)sender;	// 클릭한 버튼
-		MessageBox::Show(btn->Text);
+		//MessageBox::Show(btn->Text);
 		if (btn->Text == "Black Jack") {
-			MessageBox::Show("???");
+			//MessageBox::Show("???");
+		}
+		if (btn->Text == "Old Maid") {
+			OldMaid^ oldmaidForm = gcnew OldMaid;
+			oldmaidForm->Show();
 		}
 		//게임 창 이동
 	}
