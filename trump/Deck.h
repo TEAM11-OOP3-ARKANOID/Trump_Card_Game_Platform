@@ -21,8 +21,3 @@ private:
 	std::deque<TrumpCard*> deck;
 };
 
-class why {
-	public:
-		why();
-		~why();
-};

@@ -1,5 +1,4 @@
 #pragma once
-
 class TrumpCard {
 public:
 	enum Suits { // 각 카드의 문양, 아스키 코드에 따라 하트 = 3....
@@ -27,6 +26,11 @@ public:
 		ace
 	};
 
+	bool operator == (const TrumpCard& cd) {
+		
+		return (cd.Rank == Rank);
+
+	}
 
 	TrumpCard(Ranks Rank, Suits Suit);
 	virtual ~TrumpCard();

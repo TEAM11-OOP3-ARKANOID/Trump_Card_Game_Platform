@@ -1,9 +1,9 @@
 #pragma once
 
 #include "OldMaidGame.h"
-
-
-
+#include <vcclr.h>
+#include <string>
+#include <sstream>
 namespace trump {
 
 
@@ -24,34 +24,54 @@ namespace trump {
 
 	private: System::Collections::Generic::List< System::Windows::Forms::Button^> button_list;
 	private: System::Void OldMaid_Load(System::Object^ sender, System::EventArgs^ e) {
+
+
+		int playernum = oldmaidgame->getplayernum();
+		
+		std::vector<Draw*> playercard = oldmaidgame->getplayercard();
+		playercard[0]->print();
+
+
+		
+
+
 		int xPos = 10, yPos = 10;		// 버튼의 x, y 위치
-		for (int x = 0; x < 3; x++)		// 버튼 6개 생성
+		for (int x = 0; x < 1; x++)		// 버튼 6개 생성
 		{
 			button_list.Add(gcnew Button); // 버튼 리스트에 버튼을 추가
 			button_list[x]->Location = Point(xPos, yPos); // 버튼의 위치
 
 			if (x == 0) {
-				button_list[x]->Text = "Black Jack";
+				button_list[x]->Text = "pull out next player's card";
 			}
-			else if (x == 1) {
-				button_list[x]->Text = "Old Maid";
-			}
-			else if (x == 2) {
-				button_list[x]->Text = "One Card";
-			}
+			
 
 			button_list[x]->Size = System::Drawing::Size(90, 50); // 버튼의 크기
+			button_list[x]->Click += gcnew System::EventHandler(this, &OldMaid::ButtonClick); // 버튼을 클릭했을 때 이벤트
 			this->Controls->Add(button_list[x]);
 			xPos += 100;
 		}
+	}
+	private: System::Void ButtonClick(System::Object^ sender, System::EventArgs^ e)
+	{
+		System::Windows::Forms::Button^ btn = (System::Windows::Forms::Button^)sender;	// 클릭한 버튼
+		//MessageBox::Show(btn->Text);
+		if (btn->Text == "pull out next player's card") {
+			oldmaidgame->Myturn();
+			oldmaidgame->AIturn();
+			
+		}
+		
 	}
 
 
 
 
 	public:
+		OldMaidGame *oldmaidgame;
 		OldMaid(void)
 		{
+			oldmaidgame = new OldMaidGame;
 			InitializeComponent();
 			//
 			
@@ -93,12 +113,11 @@ namespace trump {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 
 			
-			OldMaidGame oldmaidgame;
-			int playernum = oldmaidgame.getplayernum();
-			std::vector<Draw> playercard = oldmaidgame.getplayercard();
 			
 			
-			//this->Load += gcnew System::EventHandler(this, &OldMaid::OldMaid_Load);
+			
+			
+			this->Load += gcnew System::EventHandler(this, &OldMaid::OldMaid_Load);
 		}
 #pragma endregion
 	};
