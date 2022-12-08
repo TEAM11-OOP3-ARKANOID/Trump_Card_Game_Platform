@@ -22,19 +22,12 @@ void Draw::print()
 	}
 }
 
-std::deque<TrumpCard*> Draw::gethand()
+int Draw::getsize()
 {
-	return draw;
+	return draw.size();
 }
 
-void Draw::pulloutcard(Draw* nextplayerhand)
-{
-	nextplayerhand->gethand().pop_back();
-	for (TrumpCard* card : nextplayerhand->gethand()) {
-		card->print();
-		std::cout << " ";
-	}
-}
+
 
 
 //중간것도 뽑을수잇게해야함
@@ -56,55 +49,46 @@ void Draw::deletesamecard()
 			for (int j = i + 1; j < draw.size(); j++) {
 
 				if ((draw[i]->GetRank()) == (draw[j]->GetRank())) {
+					//printf("\n[drawsamecard1]\n");
+					//draw[j]->print();
 					
-
 					draw.erase(draw.begin()+j);
-
+					//printf("\n[drawsamecard2]\n");
+					//draw[i]->print();
+					//printf("\n");
+					draw.erase(draw.begin() + i);
 					check = 2;
 					break;
 				}
-				if (check == 2) {
-					draw.erase(draw.begin() + i);
-					check = 0;
-					break;
-				}
+			
+			}
+			if (check == 2) {
+				check = 0;
+				break;
 			}
 		}
 
 
-
-		
-		/*
-		check = 1;
-		for (iter = draw.begin(); iter != draw.end(); iter++) {
-			for (iter2 = (iter+1); iter2 != draw.end(); iter2++) {
-				printf("gd");
-				if (*iter == *iter2) {
-					//둘이 숫자 같으면 둘다 지워줌
-					printf("same!!!!!!!!!!");
-					
-					//draw.erase(iter2);
-					
-					check = 2;
-					break;
-
-				}
-			}
-			if (check == 2) {
-				//draw.erase(iter);
-				check = 0;
-				break;
-			}
-
-		}*/
-		
 	}
 	
 }
 
 TrumpCard* Draw::popcard()
 {
+	srand((unsigned int)time(NULL));
+	int drawlen = draw.size();
+	int drawran = rand() % drawlen;
+	TrumpCard* card = draw[drawran];
+	//printf("\n[drawcard]\n");
+	//card->print();
+	draw.erase(draw.begin() + drawran);
+	return card;
+}
+TrumpCard* Draw::checkcard()
+{
+	
 	TrumpCard* card = draw.front();
-	draw.pop_front();
+	//printf("\n[drawcard]\n");
+	//card->print();
 	return card;
 }

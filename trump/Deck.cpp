@@ -12,7 +12,7 @@ Deck::Deck()
 	}
 
 	if (TrumpCard::Suits s = TrumpCard::joker) { // 조커는 특수 카드이므로 따로 뻄, 추후 게임(도둑잡기, 블랙잭, 원카드)에 따라 추가/제거 가능한 방식으로 수정할 예정
-		TrumpCard::Ranks r = TrumpCard::two;
+		TrumpCard::Ranks r = TrumpCard::Ranks::jokerrank;
 		deck.push_front(new TrumpCard(r, s));
 
 	}

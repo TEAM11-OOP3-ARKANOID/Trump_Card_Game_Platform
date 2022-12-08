@@ -23,7 +23,8 @@ public:
 		jack,
 		queen,
 		king,
-		ace
+		ace,
+		jokerrank
 	};
 
 	bool operator == (const TrumpCard& cd) {

@@ -30,6 +30,7 @@ namespace trump {
 		
 		std::vector<Draw*> playercard = oldmaidgame->getplayercard();
 		playercard[0]->print();
+		printf("\n");
 
 
 		

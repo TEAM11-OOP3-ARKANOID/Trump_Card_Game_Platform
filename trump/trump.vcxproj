@@ -125,6 +125,7 @@
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="GetOldMaidPlayerNum.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="OldMaid.cpp" />
     <ClCompile Include="OldMaidGame.cpp" />
@@ -133,6 +134,9 @@
     <ClInclude Include="Card.h" />
     <ClInclude Include="Deck.h" />
     <ClInclude Include="Draw.h" />
+    <ClInclude Include="GetOldMaidPlayerNum.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -142,6 +146,9 @@
     <ClInclude Include="OldMaidGame.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GetOldMaidPlayerNum.resx">
+      <DependentUpon>GetOldMaidPlayerNum.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>

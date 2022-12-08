@@ -11,10 +11,10 @@ public:
 
 	void print();
 	void drawcard(TrumpCard* card);
-	void pulloutcard(Draw* nextplayerhand);
 	void deletesamecard();
-	std::deque<TrumpCard*> gethand();
+	int getsize();
 	TrumpCard* popcard();
+	TrumpCard* checkcard();
 
 private:
 	std::deque<TrumpCard*> draw;

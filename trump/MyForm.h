@@ -1,5 +1,6 @@
 #pragma once
 #include "OldMaid.h"
+#include "GetOldMaidPlayerNum.h"
 namespace trump {
 
 	using namespace System;
@@ -47,8 +48,10 @@ namespace trump {
 			//MessageBox::Show("???");
 		}
 		if (btn->Text == "Old Maid") {
-			OldMaid^ oldmaidForm = gcnew OldMaid;
-			oldmaidForm->Show();
+			//OldMaid^ oldmaidForm = gcnew OldMaid;
+			//oldmaidForm->Show();
+			GetOldMaidPlayerNum^ getplayernumForm = gcnew GetOldMaidPlayerNum;
+			getplayernumForm ->Show();
 		}
 		//게임 창 이동
 	}

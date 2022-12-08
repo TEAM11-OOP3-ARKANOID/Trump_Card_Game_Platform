@@ -1,3 +1,4 @@
+  trump.GetOldMaidPlayerNum.resources - Embedded, ContainedInManifestFile, 
   trump.MyForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly trump, Version=0.0.*, Culture=고정 언어(고정 국가): 
@@ -19,6 +20,9 @@ Class trump.OldMaid: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     OldMaidGame* oldmaidgame : Public
+Class trump.GetOldMaidPlayerNum: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class trump.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
