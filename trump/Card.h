@@ -42,6 +42,7 @@ public:
 	virtual int GetFaceValue();
 
 	void print();
+	void TrumpCard::print_winform(System::Windows::Forms::TextBox^ textBox1);
 
 private:
 	Ranks Rank;

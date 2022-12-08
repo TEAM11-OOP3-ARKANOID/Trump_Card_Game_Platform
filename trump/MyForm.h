@@ -23,7 +23,7 @@ namespace trump {
 		{
 			button_list.Add(gcnew Button); // 버튼 리스트에 버튼을 추가
 			button_list[x]->Location = Point(xPos, yPos); // 버튼의 위치
-			
+			button_list[x]->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 10));
 			if (x == 0) {
 				button_list[x]->Text = "Black Jack";
 			}

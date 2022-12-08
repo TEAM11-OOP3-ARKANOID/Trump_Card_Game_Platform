@@ -22,6 +22,16 @@ void Draw::print()
 	}
 }
 
+void Draw::print_winform(System::Windows::Forms::TextBox^ textBox1)
+{
+	textBox1->AppendText("In my Hand: ");
+	for (TrumpCard* card : draw) {
+		card->print_winform(textBox1);
+		textBox1->AppendText(" ");
+	}
+	textBox1->AppendText("\r\n");
+}
+
 int Draw::getsize()
 {
 	return draw.size();
@@ -37,12 +47,14 @@ void Draw::drawcard(TrumpCard* card)
 }
 void Draw::deletesamecard()
 {
-	std::deque<TrumpCard*>::iterator iter;
-	std::deque<TrumpCard*>::iterator iter2;
+	
 	
 	
 	int check = 0;
 	while (check ==0) {
+		if (draw.size() == 0) {
+			return;
+		}
 		check = 1;
 		for (int i = 0; i < draw.size()-1; i++) {
 			
@@ -75,6 +87,7 @@ void Draw::deletesamecard()
 
 TrumpCard* Draw::popcard()
 {
+	
 	srand((unsigned int)time(NULL));
 	int drawlen = draw.size();
 	int drawran = rand() % drawlen;

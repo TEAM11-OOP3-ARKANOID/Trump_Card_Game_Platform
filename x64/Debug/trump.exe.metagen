@@ -1,5 +1,6 @@
   trump.GetOldMaidPlayerNum.resources - Embedded, ContainedInManifestFile, 
   trump.MyForm.resources - Embedded, ContainedInManifestFile, 
+  trump.OldMaid.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly trump, Version=0.0.*, Culture=고정 언어(고정 국가): 
 	hash=SHA1, flags=PublicKey

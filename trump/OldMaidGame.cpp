@@ -4,7 +4,7 @@
 int OldMaidGame::playernum = 2;
 
 OldMaidGame::OldMaidGame(int num) {
-	printf("%d", num);
+	//printf("%d", num);
 	playernum = num;
 }
 OldMaidGame::OldMaidGame() {

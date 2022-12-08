@@ -61,4 +61,37 @@ void TrumpCard::print() // 해당 카드를 출력
         std::cout << "Joker";
         break;
     }
+    
+}
+void TrumpCard::print_winform(System::Windows::Forms::TextBox^ textBox1)
+{
+    if (Rank <= ten && Suit != joker)
+        textBox1->AppendText(System::Convert::ToString(Rank));
+    else if (Rank == jack && Suit != joker)
+        textBox1->AppendText("J");
+    else if (Rank == queen && Suit != joker)
+        textBox1->AppendText("Q");
+    else if (Rank == king && Suit != joker)
+        textBox1->AppendText("K");
+    else if (Rank == ace && Suit != joker)
+        textBox1->AppendText("A");
+
+    switch (Suit)
+    {
+    case heart:
+        textBox1->AppendText("\u2661");
+        break;
+    case diamond:
+        textBox1->AppendText("\u25C7");
+        break;
+    case club:
+        textBox1->AppendText("\u2667");
+        break;
+    case spade:
+        textBox1->AppendText("\u2664");
+        break;
+    case joker:
+        textBox1->AppendText("Joker");
+        break;
+    }
 }
