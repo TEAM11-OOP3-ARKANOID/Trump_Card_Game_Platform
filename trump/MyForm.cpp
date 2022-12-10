@@ -1,5 +1,4 @@
 #include "MyForm.h"
-#include "BlackJack.h"
 
 using namespace System;
 using namespace System::Windows::Forms;

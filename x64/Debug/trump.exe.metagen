@@ -24,9 +24,11 @@ Class trump.OldMaid: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class trump.GetOldMaidPlayerNum: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class trump.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class trump.BlackJack: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class trump.BlackJack: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    BlackJackGame* blackjack : Public
+Class trump.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

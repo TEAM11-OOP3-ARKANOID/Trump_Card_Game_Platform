@@ -16,6 +16,9 @@ public:
 	int getsize();
 	TrumpCard* popcard();
 	TrumpCard* checkcard();
+	int BJsum();
+
+	void print_dealer(System::Windows::Forms::TextBox^ textBox1);
 
 private:
 	std::deque<TrumpCard*> draw;

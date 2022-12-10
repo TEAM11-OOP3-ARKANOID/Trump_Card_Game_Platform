@@ -1,5 +1,6 @@
 #pragma once
 #include "OldMaid.h"
+#include "BlackJack.h"
 #include "GetOldMaidPlayerNum.h"
 namespace trump {
 
@@ -45,6 +46,9 @@ namespace trump {
 		System::Windows::Forms::Button^ btn = (System::Windows::Forms::Button^)sender;	// 클릭한 버튼
 		//MessageBox::Show(btn->Text);
 		if (btn->Text == "Black Jack") {
+			BlackJackGame bjg();
+			BlackJack^ bj = gcnew BlackJack;
+			bj->Show();
 			//MessageBox::Show("???");
 		}
 		if (btn->Text == "Old Maid") {

@@ -105,3 +105,66 @@ TrumpCard* Draw::checkcard()
 	//card->print();
 	return card;
 }
+
+int Draw::BJsum() {
+	int sum = 0;
+	int acecheck = 0;
+	for (int i = 0; i < draw.size(); i++) {
+		if (draw[i]->GetRank() != 14) {
+			sum += draw[i]->GetFaceValue();
+		}
+		else if (draw[i]->GetRank() == 14)
+			acecheck++;
+	}
+
+	switch (acecheck) {
+	case 0:
+		break;
+	case 1:
+		if (sum > 10) {
+			sum += 1;
+			break;
+		}
+		else {
+			sum += 11;
+			break;
+		}
+	case 2:
+		if (sum > 9) {
+			sum += 2;
+			break;
+		}
+		else {
+			sum += 12;
+			break;
+		}
+	case 3:
+		if (sum > 8) {
+			sum += 3;
+			break;
+		}
+		else {
+			sum += 13;
+			break;
+		}
+	case 4:
+		if (sum > 7) {
+			sum += 4;
+			break;
+		}
+		else {
+			sum += 14;
+			break;
+		}
+	}
+	return sum;
+}
+
+void Draw::print_dealer(System::Windows::Forms::TextBox^ textBox1) // ºí·¢Àè µô·¯ Àü¿ë ÅØ½ºÆ®
+{
+	for (TrumpCard* card : draw) {
+		card->print_winform(textBox1);
+		textBox1->AppendText(" ");
+	}
+	textBox1->AppendText("\r\n");
+}
