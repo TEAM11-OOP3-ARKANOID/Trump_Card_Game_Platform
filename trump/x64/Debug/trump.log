@@ -1,8 +1,14 @@
-﻿  MyForm.cpp
+﻿  BlackJackGame.cpp
+C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\Deck.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\BlackJackGame.h(29,13): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\BlackJackGame.h(61,13): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\BlackJackGame.cpp(5,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MyForm.cpp
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\Deck.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\BlackJackGame.h(29,13): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\BlackJackGame.h(61,13): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\MyForm.h(49,18): warning C4930: 'BlackJackGame bjg(void)': 프로토타입 함수가 호출되지 않았습니다. 변수 정의로 사용하려고 한 것은 아닌지 확인하십시오.
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\MyForm.cpp(7,33): warning C4829: main 함수에 대한 매개 변수가 잘못된 것 같습니다. 'int main(Platform::Array<Platform::String^>^ argv)'를 사용하십시오.
+  코드를 생성하고 있습니다...
   BlackJack.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
   trump.vcxproj -> C:\Users\millk\Desktop\Trump_Card_Game_Platform\x64\Debug\trump.exe

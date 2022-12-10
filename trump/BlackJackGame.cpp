@@ -3,7 +3,6 @@
 BlackJackGame::BlackJackGame()
 {
 	srand(time(nullptr));
-	Deck deck;
 	deck.shuffle();
 	
 
