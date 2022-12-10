@@ -20,6 +20,7 @@ public:
 	BlackJackGame();
 
 	int getPlayerSum() {return playersum;}
+	Draw* getPlayer() { return player;}
 	void PlayerHand(System::Windows::Forms::TextBox^ textBox1) { player->print_winform(textBox1); }
 
 	void PickNewCard(System::Windows::Forms::TextBox^ textBox1) {

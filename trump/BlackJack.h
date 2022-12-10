@@ -47,6 +47,7 @@ namespace trump {
 		System::Windows::Forms::Button^ btn = (System::Windows::Forms::Button^)sender;	// 클릭한 버튼
 		//MessageBox::Show(btn->Text);
 		int sum;
+		Draw* temp = blackjack->getPlayer();
 		if (btn->Text == "Draw") {
 			blackjack->PickNewCard(textBox1);
 			if (sum = blackjack->getPlayerSum() >= 21) { // 플레이어의 패의 합이 21 이상일 경우 자동 처리
@@ -55,8 +56,9 @@ namespace trump {
 		}
 
 		else if (btn->Text == "Hit") {
-			Hit:
-			blackjack->DealerAction(textBox1);
+		Hit:
+			if (temp->getsize() != 1) 
+				blackjack->DealerAction(textBox1);
 		}
 
 	}
