@@ -2,6 +2,7 @@
 #include "OldMaid.h"
 #include "BlackJack.h"
 #include "GetOldMaidPlayerNum.h"
+#include "OneCard.h"
 namespace trump {
 
 	using namespace System;
@@ -56,6 +57,10 @@ namespace trump {
 			//oldmaidForm->Show();
 			GetOldMaidPlayerNum^ getplayernumForm = gcnew GetOldMaidPlayerNum;
 			getplayernumForm ->Show();
+		}
+		if (btn->Text == "One Card") {
+			OneCard^ onecardForm = gcnew OneCard;
+			onecardForm->Show();
 		}
 		//게임 창 이동
 	}

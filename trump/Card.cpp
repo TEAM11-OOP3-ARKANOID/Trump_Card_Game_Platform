@@ -1,5 +1,6 @@
 #include "Card.h"
 #include <iostream>
+#include <string>
 
 TrumpCard::TrumpCard(Ranks Rank, Suits Suit)
     : Rank(Rank),
@@ -62,6 +63,38 @@ void TrumpCard::print() // 해당 카드를 출력
         break;
     }
     
+}
+
+std::string TrumpCard::printString() {
+    std::string cardString;
+    if (Suit == joker) {
+        return "joker";
+    } 
+    if (Rank <= ten) {
+        cardString = std::to_string(Rank);
+    }
+    else if (Rank == jack) {
+        cardString = "J";
+    }
+    else if (Rank == queen) {
+        cardString = "Q";
+    }
+    else if (Rank == king) {
+        cardString = "K";
+    }
+    if (Suit == heart) {
+        cardString = cardString + "\u2661";
+    }
+    else if (Suit == club) {
+        cardString = cardString + "\u2667";
+    }
+    else if (Suit == spade) {
+        cardString = cardString + "\u2664";
+    }
+    else if (Suit == diamond) {
+        cardString = cardString + "\u25C7";
+    }
+    return cardString;
 }
 void TrumpCard::print_winform(System::Windows::Forms::TextBox^ textBox1)
 {

@@ -9,3 +9,15 @@ C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\x64\Debug\trump.GetOldMaid
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\x64\Debug\trump.MyForm.resources
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\x64\Debug\trump.OldMaid.resources
 C:\Users\millk\Desktop\Trump_Card_Game_Platform\trump\x64\Debug\trump.vcxproj.GenerateResource.cache
+C:\Users\lukes\Desktop\school\2.2\oop\Trump_Card_Game_Platform-blackjack\trump\x64\Debug\trump.vcxproj.AssemblyReference.cache
+C:\Users\lukes\Desktop\school\2.2\oop\Trump_Card_Game_Platform-blackjack\trump\x64\Debug\trump.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\lukes\Desktop\school\2.2\oop\Trump_Card_Game_Platform-blackjack\trump\x64\Debug\trump.GetOldMaidPlayerNum.resources
+C:\Users\lukes\Desktop\school\2.2\oop\Trump_Card_Game_Platform-blackjack\trump\x64\Debug\trump.MyForm.resources
+C:\Users\lukes\Desktop\school\2.2\oop\Trump_Card_Game_Platform-blackjack\trump\x64\Debug\trump.OldMaid.resources
+C:\Users\lukes\Desktop\school\2.2\oop\Trump_Card_Game_Platform-blackjack\trump\x64\Debug\trump.vcxproj.GenerateResource.cache
+C:\Users\millk\Desktop\Trump_Card_Game_Platform - 복사본\trump\x64\Debug\trump.vcxproj.AssemblyReference.cache
+C:\Users\millk\Desktop\Trump_Card_Game_Platform - 복사본\trump\x64\Debug\trump.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\millk\Desktop\Trump_Card_Game_Platform - 복사본\trump\x64\Debug\trump.GetOldMaidPlayerNum.resources
+C:\Users\millk\Desktop\Trump_Card_Game_Platform - 복사본\trump\x64\Debug\trump.MyForm.resources
+C:\Users\millk\Desktop\Trump_Card_Game_Platform - 복사본\trump\x64\Debug\trump.OldMaid.resources
+C:\Users\millk\Desktop\Trump_Card_Game_Platform - 복사본\trump\x64\Debug\trump.vcxproj.GenerateResource.cache

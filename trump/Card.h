@@ -1,3 +1,5 @@
+#include <string>;
+
 #pragma once
 class TrumpCard {
 public:
@@ -35,6 +37,8 @@ public:
 
 	TrumpCard(Ranks Rank, Suits Suit);
 	virtual ~TrumpCard();
+
+	std::string printString();
 
 	Ranks GetRank();
 	Suits GetSuit();

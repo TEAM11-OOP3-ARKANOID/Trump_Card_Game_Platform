@@ -129,8 +129,10 @@
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="GetOldMaidPlayerNum.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="OneCard.cpp" />
     <ClCompile Include="OldMaid.cpp" />
     <ClCompile Include="OldMaidGame.cpp" />
+    <ClCompile Include="OneCardGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackJack.h" />
@@ -144,10 +146,14 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="OneCard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="OldMaid.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="OldMaidGame.h" />
+    <ClInclude Include="OneCardGame.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
